@@ -1,0 +1,71 @@
+//variable
+$primary_cl: #ff1e1e;
+$primary_bg: #171414;
+
+* {
+  background-color: $primary_bg;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  cursor: none;
+}
+.main {
+  .info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    h1,
+    h2 {
+      color: white;
+      font-size: 40px;
+      z-index: 2;
+    }
+    &__career {
+      color: $primary_cl;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    &__desc {
+      color: white;
+      font-size: 16px;
+      width: 500px;
+      text-align: center;
+      line-height: 24px;
+    }
+    #tsparticles {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    canvas {
+      display: block;
+      vertical-align: bottom;
+    }
+    // &:hover{
+
+    // }
+  }
+}
+#cursor_custom {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: white;
+  transform: translate(-50%, -50%) scale(1.1);
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  transform-origin: 100% 100%;
+  mix-blend-mode: difference;
+}
