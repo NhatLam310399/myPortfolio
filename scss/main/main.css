@@ -1,0 +1,81 @@
+* {
+  background-color: #171414;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  cursor: none;
+}
+
+.main .info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.main .info h1,
+.main .info h2 {
+  color: white;
+  font-size: 40px;
+  z-index: 2;
+}
+
+.main .info__career {
+  color: #ff1e1e;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main .info__desc {
+  color: white;
+  font-size: 16px;
+  width: 500px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.main .info #tsparticles {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.main .info canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+#cursor_custom {
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
+  mix-blend-mode: difference;
+}
+/*# sourceMappingURL=main.css.map */
