@@ -19,6 +19,7 @@ const speed = 0.35;
 
 const xSet = gsap.quickSetter(cursor, "x", "px");
 const ySet = gsap.quickSetter(cursor, "y", "px");
+var boxSet = gsap.quickSetter(cursor, "css");
 window.addEventListener("mousemove", e => {    
     mouse.x = e.x;
     mouse.y = e.y;  

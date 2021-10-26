@@ -7,6 +7,8 @@ $primary_bg: #171414;
   box-sizing: border-box;
   scroll-behavior: smooth;
   cursor: none;
+  margin: 0;
+  padding: 0;
 }
 .main {
   .info {
@@ -18,11 +20,14 @@ $primary_bg: #171414;
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 20px;
     h1,
     h2 {
       color: white;
       font-size: 40px;
       z-index: 2;
+      text-align: center;
+      line-height: initial;
     }
     &__career {
       color: $primary_cl;
@@ -32,9 +37,10 @@ $primary_bg: #171414;
     &__desc {
       color: white;
       font-size: 16px;
-      width: 500px;
+      max-width: 500px;
       text-align: center;
       line-height: 24px;
+      z-index: 2;
     }
     #tsparticles {
       width: 100%;
@@ -68,4 +74,7 @@ $primary_bg: #171414;
   pointer-events: none;
   transform-origin: 100% 100%;
   mix-blend-mode: difference;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 }
