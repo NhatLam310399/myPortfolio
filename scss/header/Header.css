@@ -1,13 +1,15 @@
+#tsparticles {
+  width: 1000px;
+  height: 1000px;
+}
+
+button {
+  width: 200px;
+  height: 100px;
+}
+
 canvas {
   display: block;
   vertical-align: bottom;
-}
-#tsparticles {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
 }
 /*# sourceMappingURL=Header.css.map */
